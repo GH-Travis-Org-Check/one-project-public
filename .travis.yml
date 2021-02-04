@@ -1,8 +1,10 @@
+language: ruby
+cache : bundler
 jobs:
   include:
     - os: windows
-      language: python
-      cache : bundler
+      language: c
+      cache : yarn
       arch: amd64
       script:
         - clang -coverage -O0 hello_world.c -o hello_world
