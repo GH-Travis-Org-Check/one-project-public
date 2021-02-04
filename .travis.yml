@@ -1,7 +1,7 @@
 jobs:
   include:
-    - os: windows
-      language: python
+    - os: osx
+      language: ruby
       cache : bundler
       arch: amd64
       script:
